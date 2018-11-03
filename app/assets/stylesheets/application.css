@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+img {
+    height: 23em;
+     width: 20em;
+}
+
+/* td.actions {
+    color: white;
+}
+td.actions:hover {
+    color: green;
+} */
