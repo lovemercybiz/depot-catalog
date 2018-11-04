@@ -3,11 +3,17 @@
 one:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: Oleg-Magni-pexels.jpeg
   price: 9.99
 
 two:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: Oleg-Magni-pexels.jpeg
   price: 9.99
+
+ruby:
+  title: Oleg Magni pexels
+  description: This was a open license image I found online sometime ago. Its original file name is - Oleg Magni pexels-photo-1040473.jpeg.  
+  price: 40.10
+  image_url: Oleg-Magni-pexels.jpeg
