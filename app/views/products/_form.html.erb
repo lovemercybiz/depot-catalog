@@ -12,27 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <h5><%= form.label :title %></h5>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
+    <h5><%= form.label :description %></h5>
     <%= form.text_area :description, id: :product_description, rows: 10, cols: 60 %>
   </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
-  </div>
+    <br>
 
   <div class="field">
-    <%= form.label :price %>
+    <h5><%= form.label :image_url %></h5>
+    <%= form.text_field :image_url %>
+    <%# <textarea class="form-control"></textarea>     %>
+  </div>
+
+
+  <div class="field">
+    <h5><%= form.label :price %></h5>
     <%= form.text_field :price %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <div class=""><%= form.submit %></div>    
   </div>
 <% end %>
 
