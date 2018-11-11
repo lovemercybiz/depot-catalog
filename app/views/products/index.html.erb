@@ -25,7 +25,7 @@
     <% @products.each do |product|%>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>"><%# Why? - not working. Supposed to be like  table-striped but isn't %>
 
-        <td class="image">
+        <td>
             <%= image_tag(product.image_url, class: 'list_image')  %> 
              <%# <%= image_tag(product.image_url, class: 'list_image',size: "200x200")  << Hard code the image size%>      
         </td>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p><%# Why? %>
+<div class="container-fluid">
+<h1>Depot Catalog</h1>
+        <hr> <%# make darker %>
+       
+<%# <p>Find me in app/views/store/index.html.erb</p> %>
+<br>
+    <%# <div class="container"> %>
+    <ul style="list-style: none;">
+        <% @products.each do |product|%>
+        <div style="margin-bottom: 2em;">
+            <li class="row">
+                <%= image_tag(product.image_url) %>
+
+                <div class="col">
+                    <h2><%= product.title %></h2>
+                    <%# <div class="h6"><%= sanitize(product.description) % ></div> %>
+                    <div class="h6"><%= strip_tags(product.description)%></div>
+                  <br>
+                    <div class="lead">$<%= product.price %></div>
+                  <br>
+                    <button class="btn btn-outline-primary"><%= 'Buy Now' %></button>
+                    <%# <button class="btn btn-outline-primary"><%= link_to 'Buy Now', product % ></button> %>
+                </div> 
+            </li>
+        </div>
+        <% end %>
+     </ul>
+    <%# </div> %>
+</div>
