@@ -9,12 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'jquery-3.3.1.min.js', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
+    <% time= Time.now%>
   </head>
 
   <body>
       <%#= image_tag 'saguiLogo.svg', alt: 'Sagui' %>
       <div id="navTop" style="height: 5.5em;">
-      <a href="/"><%= image_tag('saguiLogo.svg', alt: 'home', class: 'svg') %></a> <h1><%= @page_title%><h1>
+        <a href="/"><%= image_tag('saguiLogo.svg', alt: 'home', class: 'svg') %></a>  
+        <span class="float-right text-light font-weight-bold "><%= time.strftime("%I:%M%p %A, %B %d, %Y %Z")%></span>
+        <h1><%= @page_title%><h1>
       </div>
 
       <div class="row">
@@ -51,5 +54,6 @@
 
 
                                         <p class="text-center"><small>Made with 💖 by Love</small></p>
+                                        <%# <p class="text-center"><small style="color: green;">Icons made by <a style="color: green;" href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> from <a style="color: green;" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a style="color: green;" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small></p> %>
   </body>
 </html>
