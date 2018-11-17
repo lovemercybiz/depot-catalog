@@ -16,7 +16,7 @@
       <%#= image_tag 'saguiLogo.svg', alt: 'Sagui' %>
       <div id="navTop" style="height: 5.5em;">
         <a href="/"><%= image_tag('saguiLogo.svg', alt: 'home', class: 'svg') %></a>  
-        <span class="float-right text-light font-weight-bold "><%= time.strftime("%I:%M%p %A, %B %d, %Y %Z")%></span>
+       <span class="text-light font-weight-bold"><%= time.strftime("%I:%M%p %A, %B %d, %Y %Z")%></span>
         <h1><%= @page_title%><h1>
       </div>
 
