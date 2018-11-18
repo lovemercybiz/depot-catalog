@@ -10,12 +10,13 @@
 
     <div class="container-fluid">
         <% @cart.line_items.each do |item|%>
-            <div class="media">
-                <%= image_tag(item.product.image_url, class:"cart-img")%>
-                <div class="media-body">
-                    <%= item.product.title%>
-                </div>
-            </div>
+           <ul class="list-unstyled">
+                <li class="media">  <%= image_tag(item.product.image_url, class:"cart-img mr-3 mt-1 rounded", alt:item.product.title )%>
+                    <div class="media-body align-self-center">
+                        <h4 class="font-italic"><%= item.product.title%></h4>
+                    </div>
+                </li>
+           </ul>
         <% end %>
     </div>
 
