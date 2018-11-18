@@ -1,4 +1,24 @@
-<p id="notice"><%= notice %></p>
+<%# <p id="notice"><%= notice % ></p> %>
+<br>
+<title>Your cart</title>
+<% if notice %>
+    <div class="alert alert-success" role="alert"><%= notice %></div>
+<% end %>
 
+
+    <h1>Your cart contains: </h1>
+
+    <div class="container-fluid">
+        <% @cart.line_items.each do |item|%>
+            <div class="media">
+                <%= image_tag(item.product.image_url, class:"cart-img")%>
+                <div class="media-body">
+                    <%= item.product.title%>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+<br>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %>
