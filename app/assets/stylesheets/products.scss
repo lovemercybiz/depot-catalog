@@ -67,3 +67,24 @@
 //         color: aqua;
 //     }
 // }
+
+
+.right-btns {
+    list-style: none;
+    a {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+}
+
+.add-new-product {
+    a {
+        font-weight: 700;
+        color: darkviolet;  
+        &:hover {
+             color: rgb(140, 235, 235);
+         }      
+    }
+}

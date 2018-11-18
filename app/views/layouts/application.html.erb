@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'jquery-3.3.1.min.js', 'data-turbolinks-track': 'reload' %>
@@ -14,9 +15,11 @@
 
   <body>
       <%#= image_tag 'saguiLogo.svg', alt: 'Sagui' %>
-      <div id="navTop" style="height: 5.5em;">
+      <%# <a class="fas fa-shopping-cart" href="/carts"></a> %>
+      <div id="navTop" class="container-fluid" style="height: 5.5em; padding-right:0;">
         <a href="/"><%= image_tag('saguiLogo.svg', alt: 'home', class: 'svg') %></a>  
-       <span class="text-light font-weight-bold"><%= time.strftime("%I:%M%p %A, %B %d, %Y %Z")%></span>
+        <a class="fas fa-shopping-cart" id="cart" href="/carts"></a>
+          <span class="text-light font-weight-bold" style="padding-right:.2em;"><%= time.strftime("%I:%M%p %A, %B %d, %Y %Z")%></span>
         <h1><%= @page_title%><h1>
       </div>
 

@@ -8,7 +8,7 @@
   <thead>
     <%# <tr> %>
       <%# <td colspan="3"> %>
-      <div style="background-color:rgb(55, 55, 155);"><%= link_to 'Add New Product', new_product_path %></div>
+      <div class="add-new-product"><%= link_to 'Add New Product', new_product_path %></div>
       <%# </td> %>
     <%# </tr> %>
   </thead>
@@ -16,7 +16,7 @@
   <tfoot>
     <tr>
       <td colspan="3">
-      <div style="background-color:rgb(55, 55, 155);"><%= link_to 'Add New Product', new_product_path %></div>
+          <div style="background-color:rgb(55, 55, 155);"><%= link_to 'Add New Product', new_product_path %></div>
         <%#= link_to 'Add New Product', new_product_path %>
       </td>
     </tr>
@@ -42,13 +42,14 @@
         </td>
 
         <td class="actions">
-          <ul>
-            <li class="col btn btn-sm btn-info"><%= link_to 'Show', product %></li><br><br>
-            <li class="col btn btn-sm btn-warning"><%= link_to 'Edit', edit_product_path(product) %></li><br><br>
-            <li class="col btn btn-sm btn-danger"><%= link_to 'Destroy',
+          <ul class="right-btns">
+            <li><%= link_to 'Show', product, class:"col btn btn-sm btn-info"%></li>  <br>
+            <li><%= link_to 'Edit', edit_product_path(product), class:"col btn btn-sm btn-warning" %></li><br>
+            <li><%= link_to 'Destroy',
                              product,
                              method: :delete,
-                             data: { confirm: 'Are you sure?'}%>
+                             data: { confirm: 'Are you sure?'},
+                             class:"col btn btn-sm btn-danger" %>
             
             </li>
           </ul>
