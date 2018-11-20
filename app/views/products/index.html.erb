@@ -1,5 +1,8 @@
-<p id="notice"><%= notice %></p><%# Why? %>
+<% if notice %>
+    <div class="alert alert-success" role="alert"><%= notice %></div>
+<% end %>
 
+<title>Products</title>
 <div class="container-fluid">
 <%# <div class="col col-xs col-sm col-md col-lg col-xl"> %>
 <h1>Products</h1>
