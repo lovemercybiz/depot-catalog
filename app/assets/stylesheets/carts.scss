@@ -2,7 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+
 .cart-img {
     height: 90px;
      width: 90px;
+}
+
+.btn-orange {
+    background-color: rgb(255, 115, 0);
+}
+
+.btn-showing {
+    background-color: rgb(177, 107, 241);
+}
+
+.btn-editing {
+    background-color: rgb(43, 92, 226);
+}
+
+.btn-destroying {
+    background-color: rgb(152, 228, 30);
+}
+
+.links {
+    
+    a {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }  
 }

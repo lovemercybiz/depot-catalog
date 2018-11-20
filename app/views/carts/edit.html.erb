@@ -4,5 +4,5 @@
 
 <%= render 'form', cart: @cart %>
 
-<%= link_to 'Show', @cart %> |
-<%= link_to 'Back', carts_path %>
+<div class="links"><%= link_to 'Show', @cart , class:"col btn btn btn-info"%> </div> 
+<div class="links"><%= link_to 'Back', carts_path, class:"col btn btn btn-primary" %></div>
