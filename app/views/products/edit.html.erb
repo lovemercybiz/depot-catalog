@@ -1,9 +1,11 @@
 <title>Edit : <%= @product.title %></title>
+<div class="p-2"></div>
 <h1>Editing <%= @product.title %></h1>
 <br>
 <%= render 'form', product: @product %>
 
 <br>
 
-<div class="col btn btn-sm btn-info"><%= link_to 'Show', @product %></div> 
-<div class="col btn btn-sm btn-primary"><%= link_to 'Back', products_path %></div>
+
+<div class="links"><%= link_to 'Show', @product, class:"col btn btn btn-info" %></div> 
+<div class="links"><%= link_to 'Back', products_path, class:"col btn btn btn-primary" %></div>

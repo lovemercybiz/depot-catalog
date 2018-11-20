@@ -11,32 +11,35 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="container-fluid">
+  <div class="pb-2">
     <h5><%= form.label :title %></h5>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="py-3">
     <h5><%= form.label :description %></h5>
-    <%= form.text_area :description, id: :product_description, rows: 10, cols: 60 %>
+    <%= form.text_area :description, id: :product_description, rows: 8, cols: 45, class:"form-control" %>
   </div>
 
-    <br>
 
-  <div class="field">
+
+  <div class="py-2">
     <h5><%= form.label :image_url %></h5>
     <%= form.text_field :image_url %>
     <%# <textarea class="form-control"></textarea>     %>
   </div>
 
 
-  <div class="field">
+  <div class="py-2">
     <h5><%= form.label :price %></h5>
     <%= form.text_field :price %>
   </div>
 
-  <div class="actions">
-    <div class=""><%= form.submit %></div>    
+  <div class="links">
+    <%# <div class="btn btn-lg btn-info"><%= form.submit% ></div> %>
+    <%= form.submit%>
   </div>
+</div>
 <% end %>
 
