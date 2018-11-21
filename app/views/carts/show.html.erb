@@ -9,16 +9,18 @@
     <h1 class="mt-2">Your cart contains: </h1>
 
     <div class="container-fluid">
-        <% @cart.line_items.each do |item|%>
+        
            <ul class="list-unstyled">
-                <li class="media">  <%= image_tag(item.product.image_url, class:"cart-img mr-3 mt-1 rounded", alt:item.product.title )%>
-                    <div class="media-body align-self-center">
-                        <%# <h4 class="font-italic"> <%= item.product.title% > &times; <%= item.quantity % > </h4> %>
-                        <h4 class="font-italic"> <%= item.product.title%> &times; <span class="font-weight-bold"><%= item.quantity%><span> </h4>
-                    </div>
-                </li>
+              <% @cart.line_items.each do |item|%>
+                 <li class="media">  <%= image_tag(item.product.image_url, class:"cart-img mr-3 mt-1 rounded", alt:item.product.title )%>
+                     <div class="media-body align-self-center">
+                         <h4 class="font-italic"> <%= item.product.title%> &times; <span class="font-weight-bold"><%= item.quantity%><span> </h4>
+                     </div>
+                 </li> 
+              <% end %>
            </ul>
-        <% end %>
+
+        <%= button_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'}, class:"btn btn-submit"%>
     </div>
 
 <span class="m-3"></span>
