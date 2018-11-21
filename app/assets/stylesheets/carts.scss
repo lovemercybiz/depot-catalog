@@ -10,6 +10,17 @@
 
 .btn-orange {
     background-color: rgb(255, 115, 0);
+
+    a {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+    &:hover {
+        color: rgb(230, 227, 93);
+        text-decoration: none;
+    } 
 }
 
 .btn-showing {
@@ -18,14 +29,6 @@
 
 .btn-editing {
     background-color: rgb(43, 92, 226);
-}
-
-.btn-destroying {
-    background-color: rgb(152, 228, 30);
-}
-
-.links {
-    
     a {
         color: #ffffff;
         font-weight: 700;
@@ -33,7 +36,36 @@
         
     }
     &:hover {
-        color: #ffffff;
+        color: rgb(79, 206, 48);
         text-decoration: none;
     }  
 }
+
+.btn-destroying {
+    background-color: rgb(152, 228, 30);
+
+    a {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+    &:hover {
+        color: red;
+        text-decoration: none;
+    }  
+}
+
+// .links {
+    
+//     a {
+//         color: #ffffff;
+//         font-weight: 700;
+//         text-decoration: none;
+        
+//     }
+//     &:hover {
+//         color: #ffffff;
+//         text-decoration: none;
+//     }  
+// }
