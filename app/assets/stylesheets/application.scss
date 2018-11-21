@@ -146,3 +146,12 @@ a:hover{
     padding-right:.2em;
     color: rgb(197, 228, 125);
 }
+.btn-submit {
+    background-color: rgb(228, 89, 117);
+    font-weight:bold;
+    color: white;
+    
+    &:hover{
+        background-color: rgb(110, 44, 57);        
+    }
+}
