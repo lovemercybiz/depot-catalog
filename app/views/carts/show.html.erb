@@ -13,7 +13,8 @@
            <ul class="list-unstyled">
                 <li class="media">  <%= image_tag(item.product.image_url, class:"cart-img mr-3 mt-1 rounded", alt:item.product.title )%>
                     <div class="media-body align-self-center">
-                        <h4 class="font-italic"><%= item.product.title%></h4>
+                        <%# <h4 class="font-italic"> <%= item.product.title% > &times; <%= item.quantity % > </h4> %>
+                        <h4 class="font-italic"> <%= item.product.title%> &times; <span class="font-weight-bold"><%= item.quantity%><span> </h4>
                     </div>
                 </li>
            </ul>
