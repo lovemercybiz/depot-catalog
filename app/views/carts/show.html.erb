@@ -14,11 +14,16 @@
               <% @cart.line_items.each do |item|%>
                  <li class="media">  <%= image_tag(item.product.image_url, class:"cart-img mr-3 mt-1 rounded", alt:item.product.title )%>
                      <div class="media-body align-self-center">
-                         <h4 class="font-italic"> <%= item.product.title%> &times; <span class="font-weight-bold"><%= item.quantity%><span> </h4>
+                         <h5 class="font-italic"> <%= item.product.title%> &times; <span class="font-weight-bold"><%= item.quantity%><span> </h5>
                      </div>
                  </li> 
               <% end %>
            </ul>
+
+<span style="margin-top=0.95em;"></span>
+                <div class=""><h4>Cart Total: <%= number_to_currency(@cart.total_price)%></h4></div>
+<br>
+<%# <span class="my-4"></span> %>
 
         <%= button_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'}, class:"btn btn-submit"%>
     </div>
